@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StudentLevel, GeneratedQuiz } from '../types';
-import { generateQuiz } from '../services/geminiService';
+import { generateQuiz } from '../services/aiService';
 import { FileQuestion, Sparkles, Loader2, Printer, Copy, Check } from 'lucide-react';
 
 export const QuizGenerator: React.FC = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Student, Lesson, AILessonPlan, LessonStatus } from '../types';
-import { generateLessonPlan } from '../services/geminiService';
+import { generateLessonPlan } from '../services/aiService';
 import { BrainCircuit, Sparkles, Loader2, BookOpen, Save } from 'lucide-react';
 
 interface AIPlannerProps {

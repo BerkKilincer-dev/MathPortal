@@ -198,7 +198,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ data, onUpdateData }) => {
                 <BarChart data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} />
                 <XAxis dataKey="name" axisLine={false} tickLine={false} />
-                <YAxis axisLine={false} tickLine={false} prefix="₺" />
+                <YAxis axisLine={false} tickLine={false} tickFormatter={(value) => `₺${value}`} />
                 <Tooltip 
                     contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }} 
                     cursor={{fill: '#f1f5f9'}}
