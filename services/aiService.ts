@@ -2,7 +2,7 @@ import Groq from "groq-sdk";
 import { AILessonPlan, StudentLevel, GeneratedQuiz } from '../types';
 
 // Groq API Key
-const apiKey = process.env.API_KEY || '';
+const apiKey = import.meta.env.VITE_API_KEY || process.env.API_KEY || '';
 
 // Groq client
 const groq = new Groq({ apiKey, dangerouslyAllowBrowser: true });
